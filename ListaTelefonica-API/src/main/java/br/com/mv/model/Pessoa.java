@@ -16,8 +16,6 @@ import javax.persistence.Table;
 import javax.validation.Valid;
 import javax.validation.constraints.Email;
 
-import org.hibernate.validator.constraints.br.CPF;
-
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
@@ -44,7 +42,6 @@ public class Pessoa implements Serializable {
 	@Column(name="nome")
 	private String nome;
 	
-	@CPF(message="Por favor, insira um CPF válido")
 	@Column(name="cpf")
 	private String cpf;
 	
